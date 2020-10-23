@@ -1417,6 +1417,7 @@ class Guild extends Base {
   setPreferredLocale(preferredLocale, reason) {
     return this.edit({ preferredLocale }, reason);
 
+  /**
    * Sets the position of the guild in the guild listing.
    * <warn>This is only available when using a user account.</warn>
    * @param {number} position Absolute or relative position
