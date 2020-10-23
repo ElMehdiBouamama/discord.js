@@ -1418,18 +1418,17 @@ class Guild extends Base {
     return this.edit({ preferredLocale }, reason);
 
   /**	
-   * Sets the position of the guild in the guild listing.	
-   * @param {number} position Absolute or relative position	
-   * @param {boolean} [relative=false] Whether to position relatively or absolutely	
-   * @returns {Promise<Guild>}	
-   */	
-  setPosition(position, relative) {	
-    if (this.client.user.bot) {	
-      return Promise.reject(new Error('FEATURE_USER_ONLY'));	
-    }	
-    return this.client.user.settings.setGuildPosition(this, position, relative);	
-  }	
-
+   * Sets the position of the guild in the guild listing.
+   * @param {number} position Absolute or relative
+   * @param {boolean} [relative=false] Whether to position relatively or absolutely
+   * @returns {Promise<Guild>}
+   */
+  setPosition(position, relative) {
+    if (this.client.user.bot) {
+      return Promise.reject(new Error('FEATURE_USER_ONLY'));
+    }
+    return this.client.user.settings.setGuildPosition(this, position, relative);
+  }
 
   /**
    * Marks all messages in this guild as read.
