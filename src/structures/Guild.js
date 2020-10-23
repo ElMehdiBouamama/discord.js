@@ -1,7 +1,6 @@
 'use strict';
 
 const { deprecate } = require('util');
-const Base = require('./Base');
 const GuildAuditLogs = require('./GuildAuditLogs');
 const GuildPreview = require('./GuildPreview');
 const Integration = require('./Integration');

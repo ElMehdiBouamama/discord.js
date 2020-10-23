@@ -6,7 +6,6 @@ const Collection = require('../util/Collection');
 const ClientUserSettings = require('./ClientUserSettings');
 const ClientUserGuildSettings = require('./ClientUserGuildSettings');
 const Util = require('../util/Util');
-const DataResolver = require('../util/DataResolver');
 const Guild = require('./Guild');
 
 /**
