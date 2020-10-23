@@ -27,6 +27,8 @@ class ActionsManager {
     this.register(require('./PresenceUpdate'));
     this.register(require('./UserUpdate'));
     this.register(require('./VoiceStateUpdate'));
+    this.register(require('./UserNoteUpdate'));
+    this.register(require('./GuildSync'));
     this.register(require('./GuildEmojiCreate'));
     this.register(require('./GuildEmojiDelete'));
     this.register(require('./GuildEmojiUpdate'));
