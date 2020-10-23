@@ -1419,7 +1419,6 @@ class Guild extends Base {
 
   /**
    * Sets the position of the guild in the guild listing.
-   * <warn>This is only available when using a user account.</warn>
    * @param {number} position Absolute or relative position
    * @param {boolean} [relative=false] Whether to position relatively or absolutely
    * @returns {Promise<Guild>}
