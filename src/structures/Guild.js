@@ -26,11 +26,6 @@ const Snowflake = require('../util/Snowflake');
 const SystemChannelFlags = require('../util/SystemChannelFlags');
 const Util = require('../util/Util');
 const Shared = require('./shared');
-const GuildMemberStore = require('../stores/GuildMemberStore');
-const RoleStore = require('../stores/RoleStore');
-const GuildEmojiStore = require('../stores/GuildEmojiStore');
-const GuildChannelStore = require('../stores/GuildChannelStore');
-const PresenceStore = require('../stores/PresenceStore');
 const Base = require('./Base');
 const { Error, TypeError } = require('../errors');
 
