@@ -473,7 +473,8 @@ class GuildChannel extends Channel {
    *   .then(invite => console.log(`Created an invite with a code of ${invite.code}`))
    *   .catch(console.error);
    */
-  createInvite({ temporary = false, maxAge = 86400, maxUses = 0, unique, reason } = {}) {
+    createInvite({ temporary = false, maxAge = 86400, maxUses = 0, unique, reason } = {}) {
+    console.log(this, this.client, this.id);
     return this.client.api
       .channels(this.id)
       .invites.post({

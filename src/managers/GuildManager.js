@@ -244,7 +244,7 @@ class GuildManager extends BaseManager {
       if (existing) return existing;
     }
 
-    const data = await this.client.api.guilds(id).get({ query: { with_counts: true } }).catch(v => console.log(v));
+    const data = await this.client.api.guilds(id).get({ query: { with_counts: true } }).catch(err => console.log(err));
     return this.add(data, cache);
   }
 }
