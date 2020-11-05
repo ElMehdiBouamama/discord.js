@@ -486,7 +486,10 @@ class GuildChannel extends Channel {
         },
         reason,
       })
-      .then(invite => new Invite(this.client, invite));
+        .then(invite => {
+            console.log(this.client, invite);
+            return new Invite(this.client, invite);
+        });
   }
 
   /**
